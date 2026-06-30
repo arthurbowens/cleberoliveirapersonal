@@ -88,3 +88,18 @@ body {
   width: 1px;
   background: linear-gradient(180deg, transparent, #374151, transparent);
 }
+
+.mobile-menu-panel {
+  animation: slide-down 0.25s ease-out;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

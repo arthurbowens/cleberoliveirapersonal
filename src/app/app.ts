@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { IconComponent } from './icon.component';
 
 interface Service {
@@ -71,6 +71,16 @@ export class App {
       description: 'Acompanho sua evolução e ajusto tudo para você não parar no meio do caminho.',
     },
   ];
+
+  readonly menuOpen = signal(false);
+
+  toggleMenu(): void {
+    this.menuOpen.update((open) => !open);
+  }
+
+  closeMenu(): void {
+    this.menuOpen.set(false);
+  }
 
   whatsappLink(message?: string): string {
     const text = encodeURIComponent(message ?? this.whatsappDefaultMessage);
