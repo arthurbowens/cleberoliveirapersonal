@@ -9,7 +9,6 @@
       <a href="#servicos" class="hover:text-brand-green transition-colors">Serviços</a>
       <a href="#metodo" class="hover:text-brand-green transition-colors">Método</a>
       <a href="#sobre" class="hover:text-brand-green transition-colors">Sobre</a>
-      <a href="#faq" class="hover:text-brand-green transition-colors">FAQ</a>
     </nav>
     <a
       [href]="whatsappLink()"
@@ -46,7 +45,7 @@
 
         <p class="text-lg sm:text-xl text-brand-gray-400 mb-2 leading-relaxed">
           Personal Trainer em <strong class="text-white">Itumbiara, GO</strong> com consultoria
-          <strong class="text-white"> online e presencial</strong> — método personalizado para transformar seu corpo de verdade.
+          <strong class="text-white"> online e presencial</strong>, com método personalizado para transformar seu corpo de verdade.
         </p>
 
         <p class="flex items-center gap-2 text-brand-gray-500 mb-8">
@@ -149,7 +148,7 @@
       <div class="flex flex-col items-center gap-2">
         <app-icon name="map-pin" className="w-8 h-8 text-brand-green" />
         <p class="text-white font-semibold text-sm">Itumbiara</p>
-        <p class="text-brand-gray-500 text-xs">Goiás — Atendimento presencial</p>
+        <p class="text-brand-gray-500 text-xs">Goiás. Atendimento presencial</p>
       </div>
       <div class="flex flex-col items-center gap-2 col-span-2 md:col-span-1">
         <app-icon name="globe" className="w-8 h-8 text-brand-green" />
@@ -169,7 +168,7 @@
         O QUE VOCÊ QUER <span class="text-gradient-green">CONQUISTAR?</span>
       </h2>
       <p class="text-brand-gray-400 max-w-2xl mx-auto">
-        Cada corpo é único. Por isso, crio planos sob medida — não receitas genéricas copiadas da internet.
+        Cada corpo é único. Por isso, crio planos sob medida, sem receitas genéricas copiadas da internet.
       </p>
     </div>
 
@@ -216,7 +215,7 @@
         </h2>
         <p class="text-brand-gray-400 mb-6 leading-relaxed">
           Como faixa preta, entendo na prática o que seu corpo precisa no tatame: força funcional,
-          resistência, explosão e recuperação inteligente. Não é só estética — é performance real.
+          resistência, explosão e recuperação inteligente. Não é só estética. É performance real.
         </p>
         <ul class="space-y-3 mb-8">
           <li class="flex items-start gap-3 text-brand-gray-300">
@@ -320,7 +319,7 @@
       Sou Bacharel em Educação Física pela UEG, registrado no CREF (GO-014693) e faixa preta de
       Jiu-Jitsu. Atendo presencialmente em Itumbiara, GO, e online para todo o Brasil. Uno ciência,
       experiência no tatame e acompanhamento de perto para entregar resultados que você consegue
-      manter — não só durante o programa, mas para sempre.
+      manter, não só durante o programa, mas para sempre.
     </p>
     <p class="text-brand-gray-500 mb-10">
       Chega de treinar sem direção. Chega de dietas que não funcionam. Aqui você tem um profissional
@@ -351,37 +350,6 @@
         <app-icon name="clipboard" className="w-4 h-4 text-brand-green" />
         Avaliação física
       </span>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="py-20 lg:py-28">
-  <div class="max-w-3xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-12">
-      <p class="text-brand-green font-semibold text-sm uppercase tracking-widest mb-3">Dúvidas</p>
-      <h2 class="font-display text-4xl sm:text-5xl text-white">PERGUNTAS FREQUENTES</h2>
-    </div>
-
-    <div class="space-y-4">
-      @for (faq of faqs; track faq.question) {
-        <details class="group bg-brand-gray-900 border border-brand-gray-800 rounded-xl overflow-hidden">
-          <summary
-            class="flex items-center justify-between cursor-pointer px-6 py-5 text-white font-semibold hover:text-brand-green transition-colors list-none"
-          >
-            {{ faq.question }}
-            <svg
-              class="w-5 h-5 text-brand-gray-500 group-open:rotate-180 transition-transform shrink-0 ml-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-          <div class="px-6 pb-5 text-brand-gray-400 leading-relaxed">{{ faq.answer }}</div>
-        </details>
-      }
     </div>
   </div>
 </section>
@@ -436,7 +404,7 @@
       <div class="flex flex-wrap justify-center gap-4 text-sm text-brand-gray-500">
         <span class="inline-flex items-center gap-1.5">
           <app-icon name="academic" className="w-4 h-4 text-brand-green" />
-          Bacharel em Educação Física — UEG
+          Bacharel em Educação Física, UEG
         </span>
         <span class="hidden sm:inline">•</span>
         <span class="inline-flex items-center gap-1.5">
