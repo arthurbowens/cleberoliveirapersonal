@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { IconComponent } from './icon.component';
+import { Result, ResultsCarouselComponent } from './results-carousel.component';
 
 interface Service {
   icon: string;
@@ -16,7 +17,7 @@ interface Step {
 
 @Component({
   selector: 'app-root',
-  imports: [IconComponent],
+  imports: [IconComponent, ResultsCarouselComponent],
   templateUrl: './app.html',
 })
 export class App {
@@ -69,6 +70,24 @@ export class App {
       number: '03',
       title: 'Resultados que ficam',
       description: 'Acompanho sua evolução e ajusto tudo para você não parar no meio do caminho.',
+    },
+  ];
+
+  readonly results: Result[] = [
+    {
+      image: 'resultado1.jpg',
+      goal: 'Definição',
+      title: 'Corpo mais firme e definido',
+    },
+    {
+      image: 'resultado2.jpg',
+      goal: 'Emagrecimento',
+      title: 'Menos gordura, mais disposição',
+    },
+    {
+      image: 'resultado3.jpg',
+      goal: 'Transformação',
+      title: 'Mudança real de composição corporal',
     },
   ];
 

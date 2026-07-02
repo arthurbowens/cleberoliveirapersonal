@@ -87,6 +87,21 @@ body {
   background: linear-gradient(180deg, transparent, #374151, transparent);
 }
 
+.results-carousel-track {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.results-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.results-carousel-slide {
+  scroll-snap-stop: always;
+}
+
 .mobile-menu-panel {
   animation: slide-down 0.25s ease-out;
 }

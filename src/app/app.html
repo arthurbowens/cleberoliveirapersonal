@@ -7,6 +7,7 @@
     </a>
 
     <nav class="hidden md:flex items-center gap-8 text-sm text-brand-gray-400">
+      <a href="#resultados" class="hover:text-brand-green transition-colors">Resultados</a>
       <a href="#servicos" class="hover:text-brand-green transition-colors">Serviços</a>
       <a href="#metodo" class="hover:text-brand-green transition-colors">Método</a>
       <a href="#sobre" class="hover:text-brand-green transition-colors">Sobre</a>
@@ -56,6 +57,13 @@
         class="mobile-menu-panel relative bg-brand-gray-900 border-b border-brand-gray-800 px-4 py-6 flex flex-col gap-1"
         (click)="$event.stopPropagation()"
       >
+        <a
+          href="#resultados"
+          class="mobile-menu-link px-4 py-3 rounded-xl text-white font-medium hover:bg-brand-gray-800 hover:text-brand-green transition-colors"
+          (click)="closeMenu()"
+        >
+          Resultados
+        </a>
         <a
           href="#servicos"
           class="mobile-menu-link px-4 py-3 rounded-xl text-white font-medium hover:bg-brand-gray-800 hover:text-brand-green transition-colors"
@@ -225,6 +233,34 @@
         <p class="text-white font-semibold text-sm">Personal Trainer</p>
         <p class="text-brand-gray-500 text-xs">Online & Presencial</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resultados -->
+<section id="resultados" class="py-20 lg:py-28 bg-brand-gray-900 border-y border-brand-gray-800">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <p class="text-brand-green font-semibold text-sm uppercase tracking-widest mb-3">Prova real</p>
+      <h2 class="font-display text-4xl sm:text-5xl text-white mb-4">
+        RESULTADOS DE <span class="text-gradient-green">QUEM CONFIARAM</span>
+      </h2>
+      <p class="text-brand-gray-400 max-w-2xl mx-auto">
+        Transformações reais de alunas com acompanhamento personalizado. O próximo resultado pode ser o seu.
+      </p>
+    </div>
+
+    <app-results-carousel [results]="results" />
+
+    <div class="text-center mt-10">
+      <a
+        [href]="whatsappLink('Olá, Cleber! Vi os resultados no site e quero começar minha transformação.')"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-whatsapp inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold text-brand-black"
+      >
+        Quero meu resultado
+      </a>
     </div>
   </div>
 </section>
